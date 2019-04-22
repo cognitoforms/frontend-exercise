@@ -2,6 +2,8 @@
 
 Your task will be to implement the `Quiz.vue` component. This component should provide a user interface based on the following description:
 
+---
+
 > Prompt the user with a series of multiple choice questions, one at a time, then provide a summary of how the user answered the questions.
 
 - A button should be used to advance from one question to the next
@@ -11,7 +13,21 @@ Your task will be to implement the `Quiz.vue` component. This component should p
 
 _You may add or remove files as you see fit, but the build/deployment process should not change._
 
-# Setup
+__Your solution should be delivered as a [CodeSandbox](https://codesandbox.io), regardless of the tools you use to do the work.__
+
+## CodeSandbox
+---
+
+This repository is associated with a [CodeSandbox](https://codesandbox.io/s/5wnw32pppl). The easiest way to complete this exercise is to open the sandbox URL and click the blue __Fork__ button in the top right corner. From there you can add and edit files and see how your output is progressing.
+
+When you're done, simply send us your CodeSandbox link.
+
+## Local Development
+---
+
+You may elect to __fork__ this repository and implement your solution using whatever tools you prefer. Your solution must still be as a [CodeSandbox](https://codesandbox.io) link, however. You can easily create a sandbox from your GitHub repository __[here](https://codesandbox.io/s/github)__.
+
+Below are the relevant command line scripts to enable development:
 
 ```bash
 # install dependencies
