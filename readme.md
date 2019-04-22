@@ -14,6 +14,7 @@ Your task will be to implement the `Quiz.vue` component. This component should p
 _You may add or remove files as you see fit, but the build/deployment process should not change._
 
 __Your solution should be delivered as a [CodeSandbox](https://codesandbox.io), regardless of the tools you use to do the work.__
+
 ---
 
 ## CodeSandbox
