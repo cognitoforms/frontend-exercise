@@ -25,7 +25,7 @@ When you're done, simply send us your CodeSandbox link.
 
 ## Local Development
 
-You may elect to __fork__ this repository and implement your solution using whatever tools you prefer. Your solution must still be as a [CodeSandbox](https://codesandbox.io) link, however. You can easily create a sandbox from your GitHub repository __[here](https://codesandbox.io/s/github)__.
+You may elect to __fork__ this repository and implement your solution using whatever tools you prefer. Your solution must still be a [CodeSandbox](https://codesandbox.io) link, however. You can easily create a sandbox from your GitHub repository __[here](https://codesandbox.io/s/github)__.
 
 Below are the relevant command line scripts to enable development:
 
