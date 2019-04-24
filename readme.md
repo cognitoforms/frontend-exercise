@@ -13,7 +13,7 @@ _You may add or remove files as you see fit, but the build/deployment process sh
 
 ---
 
-[:memo: ___Submit your solution here___ :mailbox: ](https://www.cognitoforms.com/CognitoForms/EmploymentSurvey?entry=%7B%22PositionApplyingFor%22:%22Front%20End%20Engineer%22%7D)
+:memo: ___[Submit your solution here](https://www.cognitoforms.com/CognitoForms/EmploymentSurvey?entry=%7B%22PositionApplyingFor%22:%22Front%20End%20Engineer%22%7D)___ :mailbox:
 
 ---
 
