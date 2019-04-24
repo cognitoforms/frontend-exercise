@@ -2,8 +2,6 @@
 
 Your task will be to implement the `Quiz.vue` component. This component should provide a user interface based on the following description:
 
----
-
 > Prompt the user with a series of multiple choice questions, one at a time, then provide a summary of how the user answered the questions.
 
 - A button should be used to advance from one question to the next
@@ -13,7 +11,9 @@ Your task will be to implement the `Quiz.vue` component. This component should p
 
 _You may add or remove files as you see fit, but the build/deployment process should not change._
 
-__Your solution should be delivered as a [CodeSandbox](https://codesandbox.io), regardless of the tools you use to do the work.__
+---
+
+[:memo: ___Submit your solution here___ :mailbox: ](https://www.cognitoforms.com/CognitoForms/EmploymentSurvey?entry=%7B%22PositionApplyingFor%22:%22Front%20End%20Engineer%22%7D)
 
 ---
 
