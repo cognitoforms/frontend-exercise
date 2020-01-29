@@ -1,4 +1,4 @@
-# Cognito Forms Frontend Developer Exercise
+# Cognito Forms Technical Exercise
 
 Your task will be to implement the `Quiz.vue` component. This component should provide a user interface based on the following description:
 
@@ -13,7 +13,7 @@ _You may add or remove files as you see fit, but the build/deployment process sh
 
 ---
 
-:memo: ___[Submit your solution here](https://www.cognitoforms.com/CognitoForms/EmploymentSurvey?entry=%7B%22PositionApplyingFor%22:%22Front%20End%20Engineer%22%7D)___ :mailbox:
+:memo: ___[Submit your solution here](https://www.cognitoforms.com/CognitoForms/EmploymentSurvey)___ :mailbox:
 
 ---
 
