@@ -3,17 +3,19 @@
   <div id="quiz-container">
     <button v-if="quizStatus === 'not-started'" @click="startQuiz">Start Quiz</button>
     <div v-if="quizStatus === 'in-progress'" id="question-container">
-      <div class="question-header">Q {{ currentQuestion }} of {{ questions.length }}</div>
-      <template v-for="(question, index) in questions">
-        <QuizQuestion
-          v-if="index+1 === currentQuestion"
-          :key="index"
-          :question="question" 
-          :questionNum="index+1"
-          @advance-question="advanceQuestion"
-        />
-      </template>
+      <div class="question-header">Question {{ currentQuestion }}/{{ questions.length }}</div>
+      <div class="question-body">
+        <template v-for="(question, index) in questions">
+          <QuizQuestion
+            v-if="index+1 === currentQuestion"
+            :key="index"
+            :question="question" 
+            :questionNum="index+1"
+            @advance-question="advanceQuestion"
+          />
+        </template>
       </div>
+    </div>
     <QuizSummary 
       v-if="quizStatus === 'completed'"
       :questions="questions"
@@ -67,41 +69,54 @@ export default {
     height: 100vh;
     display: grid;
     place-items: center;
+    background: aliceblue;
   }
 
   #quiz-container > button {
     font-size: 64px;
     padding: 32px;
-    border-radius: 64px;
     border: 0px;
     box-shadow: 4px 4px 32px 0px rgb(114, 114, 114) ;
-    background-color:lightskyblue;
-    cursor: pointer
+    background-color:#09a098;
+    color: white;
+    cursor: pointer;
+    transition: 0.3s all;
   }
 
   #quiz-container > button:hover {
-    background-color:rgb(173, 224, 255)
+    transform: scale(1.05);
   }
 
   #question-container {
-    border: 2px solid;
-    padding: 16px;
     display: flex;
     flex-direction: column;
+    border-radius: 32px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    width: 30%;
+    height: 40%;
+    background: white
   }
 
-  #question-container .question-header {
+  .question-header {
     justify-self: flex-start;
     font-size: 32px;
-    border-bottom: 4px double;
+    border: 0px solid black;
+    border-bottom: 0px;
+    border-radius: 32px 32px 0px 0px;
+    padding: 16px;
+    font-weight: bold;
+    background-color: #d85427;
+    color: white
   }
 
-  #question-container hr {
-    flex: 1;
+  .question-body {
+    font-size: 24px;
+    border: 0px solid black;
+    border-top: 0px;
+    border-radius: 0px 0px 32px 32px;
+    padding: 16px;
+    height: 100%;
+    overflow: scroll;
   }
 
-  #question-container .question-footer button {
-    background-color: deepskyblue;
-    font-style: bold;
-  }
 </style>

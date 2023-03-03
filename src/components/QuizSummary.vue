@@ -33,7 +33,7 @@ h1 {
 }
 
 .chosen {
-	background-color: rgba(0, 195, 255, 0.221);
+	background-color: #09a098;
 }
 
 </style>
