@@ -3,14 +3,24 @@
   <div id="quiz-container">
     <button v-if="quizStatus === 'not-started'" @click="startQuiz">Start Quiz</button>
     <div v-if="quizStatus === 'in-progress'" id="question-container">
-      {{ currentQuestion }} of {{ questions.length }}
-      <button @click="advanceQuestion">next</button>
+      <div class="question-header">Q {{ currentQuestion }} of {{ questions.length }}</div>
+      <template v-for="(question, index) in questions">
+        <QuizQuestion
+          v-if="index+1 === currentQuestion"
+          :key="index"
+          :question="question" 
+          :questionNum="index+1"
+          @advance-question="advanceQuestion"
+        />
+      </template>
       </div>
     <div v-if="quizStatus === 'completed'">Completed</div>
   </div>
 </template>
 
 <script>
+import QuizQuestion from './components/QuizQuestion.vue';
+
 export default {
   props: {
     questions: {
@@ -26,17 +36,21 @@ export default {
     };
   },
   methods: {
-    startQuiz () {
+    startQuiz() {
       this.quizStatus = 'in-progress'
       this.currentQuestion = 1;
     },
-    advanceQuestion () {
+    advanceQuestion(selected) {
+      this.answers.push(selected)
       if (this.currentQuestion >= this.questions.length) {
         this.quizStatus = 'completed'
       } else {
         this.currentQuestion++
       }
     }
+  },
+  components: {
+    QuizQuestion
   }
 };
 </script>
@@ -59,7 +73,29 @@ export default {
     cursor: pointer
   }
 
-    #quiz-container > button:hover {
+  #quiz-container > button:hover {
     background-color:rgb(173, 224, 255)
+  }
+
+  #question-container {
+    border: 2px solid;
+    padding: 16px;
+    display: flex;
+    flex-direction: column;
+  }
+
+  #question-container .question-header {
+    justify-self: flex-start;
+    font-size: 32px;
+    border-bottom: 4px double;
+  }
+
+  #question-container hr {
+    flex: 1;
+  }
+
+  #question-container .question-footer button {
+    background-color: deepskyblue;
+    font-style: bold;
   }
 </style>
