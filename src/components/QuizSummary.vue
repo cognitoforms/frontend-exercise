@@ -66,9 +66,16 @@ li {
 }
 
 .show-others-container {
-	text-align: center;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	gap: 10px;
 	font-size: 24px;
 	padding: 16px;
+}
+
+.show-others-container * {
+	cursor: pointer
 }
 
 </style>
