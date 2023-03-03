@@ -2,7 +2,7 @@
 	<div id="question-box">
 		<div class='question-section'>
 			<div class="question-text">{{ question.text }}</div>
-			<div v-for="(answer, index) in question.answers" :key="answer">
+			<div class="input-container" v-for="(answer, index) in question.answers" :key="answer">
 				<input 
 					type="radio" 
 					:name="inputName()"
@@ -78,7 +78,21 @@ button:disabled {
 	cursor: default
 }
 
-.
+.input-container {
+	display: flex;
+	justify-content: flex-start;
+	align-items: center;
+	gap: 4px
+}
+
+input {
+	height: 1rem;
+	width: 1rem;
+}
+
+input, label {
+		cursor: pointer
+}
 
 * {
 	font-size: 24px;
