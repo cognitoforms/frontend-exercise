@@ -14,12 +14,17 @@
         />
       </template>
       </div>
-    <div v-if="quizStatus === 'completed'">Completed</div>
+    <QuizSummary 
+      v-if="quizStatus === 'completed'"
+      :questions="questions"
+      :answers="answers"
+    />
   </div>
 </template>
 
 <script>
 import QuizQuestion from './components/QuizQuestion.vue';
+import QuizSummary from './components/QuizSummary.vue';
 
 export default {
   props: {
@@ -50,7 +55,8 @@ export default {
     }
   },
   components: {
-    QuizQuestion
+    QuizQuestion,
+    QuizSummary
   }
 };
 </script>

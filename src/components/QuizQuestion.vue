@@ -9,7 +9,7 @@
 				:id="inputId(index+1)"
 				:value="index"
 			>
-			<label :for="inputId(index)">{{ answer }}</label>
+			<label :for="inputId(index+1)">{{ answer }}</label>
 		</div>
 		<button 
 			:disabled="selected === null"
@@ -19,6 +19,7 @@
 </template>
 
 <script>
+
 export default {
 	data() {
 		return {
@@ -35,6 +36,7 @@ export default {
 		}
 	}
 }
+
 </script>
 
 <style scoped>
