@@ -63,7 +63,12 @@ export default {
 };
 </script>
 
-<style scoped>
+<style>
+
+  * {
+    margin: 0px;
+  }
+
   #quiz-container {
     width: 100vw;
     height: 100vh;
@@ -100,7 +105,6 @@ export default {
   .question-header {
     justify-self: flex-start;
     font-size: 32px;
-    border: 0px solid black;
     border-bottom: 0px;
     border-radius: 32px 32px 0px 0px;
     padding: 16px;
@@ -111,7 +115,6 @@ export default {
 
   .question-body {
     font-size: 24px;
-    border: 0px solid black;
     border-top: 0px;
     border-radius: 0px 0px 32px 32px;
     padding: 16px;
