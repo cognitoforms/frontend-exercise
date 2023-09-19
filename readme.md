@@ -13,10 +13,6 @@ _You may add or remove files as you see fit, but the build/deployment process sh
 
 ---
 
-:memo: ___[Submit your solution here](https://www.cognitoforms.com/CognitoForms/EmploymentSurvey?v2)___ :mailbox:
-
----
-
 ## CodeSandbox
 
 The easiest way to complete this exercise is to [open this repository in CodeSandbox](https://codesandbox.io/s/github/cognitoforms/frontend-exercise) and click the blue __Fork__ button in the top right corner. From there you can add and edit files and see how your output is progressing.
